@@ -1,9 +1,7 @@
 import React from "react";
-import axios from "axios";
 
 const Modal = ({titulo, descripcion, id}) => {
-
-    
+    // Modal para info.
     return(   
         <div className="modal fade" id={id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">

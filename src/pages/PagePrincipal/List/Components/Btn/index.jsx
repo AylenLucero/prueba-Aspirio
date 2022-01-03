@@ -3,12 +3,8 @@ import { Link } from "react-router-dom";
 
 const Btn = ({text, link}) => {
 
-
-
     return(
-            <Link to={`/api/libros/${link}`} type="button" class="btn btn-secondary">{text}</Link>
- 
-        
+        <Link to={`/api/libros/${link}`} type="button" class="btn btn-secondary">{text}</Link>
     )
 }
 

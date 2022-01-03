@@ -2,15 +2,16 @@
 import axios from 'axios';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Libro } from '../Libro/index';
-import {api} from '../../api/index';
+import {Book} from './Components/Libro';
+import { baseUrl } from '../../../api';
 
-const Lista = () => {
+const List = () => {
 
   const [list, setList] = useState()
-  async function getLibros() {
+
+  async function getBooks() {
     try {
-      const response = await axios.get('http://localhost:3000/api/libros');
+      const response = await axios.get(baseUrl);
       setList(response.data)
       
     } catch (error) {
@@ -18,16 +19,16 @@ const Lista = () => {
     }
   }
   useEffect(() => {
-    getLibros()
+    getBooks()
   }, [ ])
    
     return (
       <div className='container'>
-        <Libro libros={list} />
+        <Book books={list} />
       </div> 
     )
   
 }
 
-export {Lista};
+export {List};
 

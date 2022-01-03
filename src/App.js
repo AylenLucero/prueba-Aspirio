@@ -1,27 +1,23 @@
 
 import React from 'react';
-import { Libro } from './Components/Libro';
-import { Modal } from './Components/Modal';
-import { Lista } from './Components/Lista';
+import { List } from './pages/PagePrincipal/List';
 import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-import { Btn } from './Components/Btn';
-import { PageId } from './pages';
-import { ModalEdit } from './Components/ModalEdit';
+import {PageEdit} from './pages';
 
 const App = () => {
 
-   
   return(
+    // Rutas del proyecto
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Lista />}>
+        <Route path="/" element={<List />}>
         </Route>
-        <Route path="/api/libros/:id" element={<PageId />}>
+        <Route path="/api/libros/:id" element={<PageEdit />}>
         </Route>
       </Routes>
     </BrowserRouter>
