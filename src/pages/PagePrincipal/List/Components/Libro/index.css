@@ -1,0 +1,19 @@
+.list {
+    width: 70%;
+}
+
+.textList {
+    color: #19194B ;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+.textList:hover {
+    color: #C70039;
+}
+
+.liList:hover {
+    background-color: #19194b0e;
+}

@@ -1,0 +1,35 @@
+.containerEdit {
+    width: 70%;
+    background: linear-gradient(150deg, #19194b75 50%, #900c3f7e 100%);
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 5px #19194b);
+}
+
+.textInd {
+    color: #fafafa;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.formGroup {
+    width: 90%;
+    margin-left: 5%;
+}
+.h1Edit {
+    color: #fafafa;
+}
+.btnEditForm {
+    background-color: #19194B;
+    border: 1px solid #19194B;
+    transition-duration: 1s;
+    padding: 10px 30px 10px 30px;
+}
+.btnEditForm:hover {
+    border: 1px solid #19194B;
+    background-color: #19194B;
+    filter: drop-shadow(0.8px 0.2px 4px #C70039);
+}
+.containerBtn {
+    display: flex;
+    justify-content: end;
+}

@@ -4,6 +4,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import {Book} from './Components/Libro';
 import { baseUrl } from '../../../api';
+import { Layout } from '../../../Layout';
 
 const List = () => {
 
@@ -23,8 +24,15 @@ const List = () => {
   }, [ ])
    
     return (
-      <div className='container'>
-        <Book books={list} />
+      
+      <div className='container-fluid'>
+        <Layout >
+          <h1 className='mt-5 text-center'>My List</h1>
+        <div className=' d-flex justify-content-center mt-3 mb-5'>
+          
+          <Book books={list} />
+        </div>
+        </Layout>
       </div> 
     )
   

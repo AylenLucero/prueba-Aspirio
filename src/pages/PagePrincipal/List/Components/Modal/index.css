@@ -1,0 +1,18 @@
+.modalFont {
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(150deg, #19194b94 50%, #900c3fb9 100%);
+    
+}
+
+.modalBody {
+    background-color: #fafafaf8 ;
+    color: black;
+}
+.btnModal {
+    background-color: #19194B !important;
+    color: #fafafa !important;
+}
+.btnModal:hover {
+    filter: drop-shadow(1px 1px 2px #C70039 );
+}

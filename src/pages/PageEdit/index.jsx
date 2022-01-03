@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Form } from "./Component/Form";
 import { baseUrl } from "../../api";
+import { Layout } from "../../Layout";
 
 const PageEdit = () => {
     const {id} = useParams();
@@ -25,7 +26,12 @@ const PageEdit = () => {
       }, [ ])
 
     return(
+      <div className="container-fluid">
+        <Layout>
         <Form list={list} />
+        </Layout>
+      </div>
+        
     )
 }
 
