@@ -22,7 +22,7 @@ const Form = ({list = []}) => {
         }
         
     })
-
+ 
     const handdleChange = (e) => {
         
         const valor = e.target.value        
