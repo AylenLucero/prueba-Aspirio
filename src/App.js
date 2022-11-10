@@ -10,8 +10,8 @@ import {
 import {PageEdit} from './pages';
 
 const App = () => {
-
-  return(
+ 
+  return( 
     // Rutas del proyecto
     <BrowserRouter>
       <Routes>
