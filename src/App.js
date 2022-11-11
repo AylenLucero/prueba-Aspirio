@@ -12,7 +12,7 @@ import {PageEdit} from './pages';
 const App = () => {
  
   return( 
-    // Rutas del proyecto
+    // Rutas del proyecto 
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<List />}>
